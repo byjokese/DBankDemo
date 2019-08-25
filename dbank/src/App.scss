@@ -1,0 +1,390 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url("https://wallpapersite.com/images/pages/pic_h/5980.jpg");
+  overflow: hidden;
+}
+
+hr {
+  border: 1px solid white;
+}
+
+.btn-close {
+  vertical-align: middle;
+  border: none;
+  background-color: white;
+  height: 30px;
+  widows: 30px;
+}
+
+.dbankBackground.dbankBackground-enter {
+  top: 50%;
+  opacity: 1;
+}
+
+.dbankBackground {
+  position: absolute;
+  top: -350px;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  height: 650px;
+  width: 1200px;
+  background-color: #000312;
+  border: 3px solid white;
+  -webkit-transition: all 2.5s;
+  -moz-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  transition: all 2.5s;
+}
+
+.dbankHeader.dbankHeader-enter {
+  left: 360px;
+  opacity: 1;
+}
+
+.dbankHeader {
+  opacity: 0;
+  top: 140px;
+  left: -50px;
+  margin: 20px;
+  position: absolute;
+  font-size: 3rem;
+  padding: 0;
+  color: white;
+  z-index: 2;
+  -webkit-transition: all 2.5s;
+  -moz-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  transition: all 2.5s;
+}
+
+.dbankHeaderSepContainer {
+  position: absolute;
+  top: 230px;
+  left: 380px;
+}
+
+.dbankHeaderSep {
+  position: relative;
+  left: auto;
+  background-color: white;
+  height: 3px;
+  width: 1145px;
+  opacity: 0;
+  -webkit-transition: all 2.5s;
+  -moz-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  transition: all 2.5s;
+}
+
+.dbankHeaderSep.dbankHeaderSep-enter {
+  width: 1145px;
+  animation: reveal 2.5s forwards;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 0 100%);
+  }
+
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.dbankCloseBtn {
+  position: absolute;
+  top: 182px;
+  left: 2000px;
+  background-color: white;
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all 2.5s;
+  -moz-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  transition: all 2.5s;
+}
+
+.dbankCloseBtn.dbankCloseBtn-enter {
+  left: 1500px;
+  opacity: 1;
+}
+
+.dbankMainPageGradient {
+  z-index: 1;
+  position: absolute;
+  top: 270px;
+  left: 420px;
+  width: 1100px;
+  height: 500px;
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(0, 3, 18, 1) 0%, rgba(0, 3, 18, 0.9) 60%, rgba(0, 3, 18, 0) 100%);
+  -webkit-transition: all 2.5s;
+  -moz-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  transition: all 2.5s;
+}
+
+.dbankMainPageGradient.dbankMainPageGradient-show {
+  opacity: 1;
+}
+
+.dBankCard {
+  position: absolute;
+  top: 270px;
+  left: 420px;
+  width: 400px;
+  padding: 5px;
+  border: white 2px solid;
+  border-radius: 7px 7px 7px 7px;
+  opacity: 0;
+  -webkit-transition: all 2.5s;
+  -moz-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  transition: all 2.5s ease-in;
+}
+
+.dBankCard.dbankCard-enter {
+  opacity: 1;
+}
+
+.dBankCard>img {
+  width: 400px;
+  opacity: 1;
+}
+
+.dbankMoneySituation {
+  position: absolute;
+  top: 0px;
+  left: 1050px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 100;
+  opacity: 0;
+  -webkit-transition: all 2.5s;
+  -moz-transition: all 2.5s;
+  -o-transition: all 2.5s;
+  transition: all 2.5s;
+}
+
+.dbankMoneySituation.dbankMoneySituation-enter {
+  top: 270px;
+  opacity: 1;
+}
+
+.dbankMoney {
+  margin-top: 10px;
+  position: relative;
+  font-size: 9rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 110px;
+}
+
+.dbankLastTranscMoney {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.dBankButtonContainer {
+  position: absolute;
+  z-index: 2;
+  top: 620px;
+  left: 1500px;
+  padding: 0px;
+  min-width: 1400px;
+  height: 60px;
+  -webkit-transition: all 3s;
+  -moz-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
+  //border: white 1px solid;
+}
+
+.dBankButtonContainer.dBankButtonContainer-enter {
+  left: 425px;
+}
+
+$top-btn-enter:280px;
+
+.dBankButtonContainer.dBankButtonContainer-nav {
+  top: $top-btn-enter;
+}
+
+.dBankButton {
+  position: absolute;
+  vertical-align: bottom;
+  border: white 2px solid;
+  border-radius: 10px;
+  left: 0px;
+  bottom: 0px;
+  width: 220px;
+  height: 70px;
+  color: white;
+  text-align: center;
+  -webkit-transition: width 3s 0s, opacity 3s, top 3s, margin 3s;
+  -moz-transition: width 3s 0s, opacity 3s, top 3s, margin 3s;
+  -o-transition: width 3s 0s, opacity 3s, top 3s, margin 3s;
+  transition: width 3s 0s, opacity 3s, top 3s, margin 3s;
+  opacity: 0;
+}
+
+.dBankButton:last-child {
+  width: 90px;
+}
+
+@for $button from 1 through 4 {
+  @if($button==1) {
+    .dBankButton.dBankButton-enter:nth-child(#{$button}) {
+      opacity: 1;
+    }
+
+    .dBankButton.dBankButton1:nth-child(#{$button}) {
+      width: 1050px;
+      transition: width 3s 2.5s;
+    }
+  }
+
+  @else {
+    .dBankButton.dBankButton-enter:nth-child(#{$button}) {
+      left: 300px * ($button - 1);
+      opacity: 1;
+    }
+
+    .dBankButton.dBankButton1:nth-child(#{$button}) {
+      margin-bottom: 100px * ($button - 1);
+      opacity: 0;
+      transition: all 3s;
+    }
+  }
+}
+
+.dBankkeyboardContainer {
+  position: absolute;
+  z-index: 1;
+  height: 350px;
+  width: 450px;
+  top: 300px;
+  left: 425px;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+  opacity: 0;
+}
+
+.dBankkeyboardContainer.dBankkeyboardContainer-enter {
+  opacity: 1;
+  top: 370px;
+}
+
+.dBankkeyboardKey {
+  position: absolute;
+  width: 90px;
+  height: 60px;
+  border-radius: 7px;
+  background-color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+.dBankkeyboardKey:nth-child(12) {
+  box-sizing: border-box;
+  border-bottom: lightgreen 20px solid;
+}
+
+@for $key from 1 through 12 {
+  @if($key==2 or $key==5 or $key==8 or $key==11) {
+    .dBankkeyboardKey:nth-child(#{($key)}) {
+      margin-left: 107px;
+    }
+  }
+
+  @if($key==3 or $key==6 or $key==9 or $key==12) {
+    .dBankkeyboardKey:nth-child(#{($key)}) {
+      margin-left: 107px * 2;
+    }
+  }
+
+  @if($key==4 or $key==5 or $key==6) {
+    .dBankkeyboardKey.dBankkeyboardKey-enter:nth-child(#{($key)}) {
+      margin-top: 75px;
+    }
+  }
+
+  @if($key==7 or $key==8 or $key==9) {
+    .dBankkeyboardKey.dBankkeyboardKey-enter:nth-child(#{($key)}) {
+      margin-top: 75px *2;
+    }
+  }
+
+  @if($key==10 or $key==11 or $key==12) {
+    .dBankkeyboardKey.dBankkeyboardKey-enter:nth-child(#{($key)}) {
+      margin-top: 75px *3;
+    }
+  }
+}
+
+.dBankDepMoneyContainer {
+  position: absolute;
+  z-index: 1;
+  height: 350px;
+  width: 680px;
+  top: 370px;
+  left: 800px;
+  color: white;
+  opacity: 0;
+}
+
+.dBankDepMoneyContainer.dBankDepMoneyContainer-enter {
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+  opacity: 1;
+}
+
+.dbankDepMoneyQuantity {
+  display: block;
+  height: auto;
+}
+
+.dbankDepMoneyQuantity {
+  float: right;
+  margin-right: 40px;
+  font-size: 200px;
+}
+
+.dBankDepCloseBtn {
+  position: absolute;
+  top: 700px;
+  left: 1500px;
+  width: 80px;
+  height: 60px;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  -webkit-transition: all 3s;
+  -moz-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
+  opacity: 0;
+}
+
+.dBankDepCloseBtn.dBankDepCloseBtn-enter {
+  opacity: 1;
+  left: 400px;
+}
